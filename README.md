@@ -1,58 +1,67 @@
+# Minhas viagens
 
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+> Web App para mostrar os lugares fixados que você visitou ou deseja ir.
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
-## What is inside?
 
-This project uses lot of stuff as:
+## Começando
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+### GraphCMS
 
-## Getting Started
+Este projeto usa [GraphCMS] (https://graphcms.com/), então você precisa criar uma conta lá primeiro.
 
-First, run the development server:
+Depois de criar o Schema, basta seguir as etapas:
+- Schema > Add New Model with `Place` name
+- And add the following fields:
+  - `Single Line Text` as `name`
+  - `Slug` as `slug`
+  - `Map` as `location`
+  - `Rich Text` as `description`
+  - `Asset Picker` as `gallery`
+
+- Schema > Add New Model with `Page` name
+- And add the following fields:
+  - `Single Line Text` as `heading`
+  - `Slug` as `slug`
+  - `Rich Text` as `body`
+
+Depois disso, preencha alguns valores e não se esqueça de `publicar`!
+
+#### Autenticação
+
+Para criar um acesso de token, vá para `Configurações> Acesso API`, dentro desta página, encontre` Tokens de autenticação permanente`,
+crie um nome de token e marque todas as consultas possíveis. Salve e obtenha o token.
+
+### NextJS
+
+Depois de criar sua conta no [GraphCMS](https://graphcms.com/) e seguir as etapas acima, você só precisa renomear
+o `.env.example` para` .env.local` (se você planeja executar localmente) e edite as chaves lá.
+
+Com tudo pronto, você pode iniciar o aplicativo com:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http: // localhost: 3000] (http: // localhost: 3000) com seu navegador para ver o resultado.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Você pode começar a editar a página modificando `pages / index.js`. A página é atualizada automaticamente conforme você edita o arquivo.
 
-## Commands
+## Comandos
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+- `dev`: executa seu aplicativo em` localhost: 3000`
+- `build`: cria a versão de construção de produção
+- `start`: inicia um servidor simples com o código de produção de construção
+- `lint`: executa o linter em todos os componentes e páginas
+- `test`: executa jest para testar todos os componentes e páginas
+- `test: watch`: executa jest no modo watch
 
-## Learn More
+## Saber mais
 
-To learn more about Next.js, take a look at the following resources:
+Para saber mais sobre Next.js, dê uma olhada nos seguintes recursos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Documentação Next.js](https://nextjs.org/docs) - aprenda sobre os recursos e API do Next.js.
+- [Aprenda Next.js](https://nextjs.org/learn) - um tutorial interativo Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Você pode verificar [o repositório Next.js GitHub](https://github.com/vercel/next.js/) - seus comentários e contribuições são bem-vindos!
