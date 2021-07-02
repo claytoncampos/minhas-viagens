@@ -8,8 +8,9 @@ import { GetPageBySlugQuery, GetPagesQuery } from 'graphql/generated/graphql'
 export default function Page({ heading, body }: PageTemplateProps) {
   const router = useRouter()
 
-  //retorna um loading
+  //retorna um loading enquanto está sendo criado
   if (router.isFallback) return null
+
   return <PageTemplate heading={heading} body={body} />
 }
 
@@ -24,6 +25,7 @@ export async function getStaticPaths() {
   return { paths, fallback: true }
 }
 
+//gera os dados das paginas
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { page } = await client.request<GetPageBySlugQuery>(GET_PAGE_BY_SLUG, {
     slug: `${params?.slug}`
