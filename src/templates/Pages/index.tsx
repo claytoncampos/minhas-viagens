@@ -1,5 +1,6 @@
 import { CloseOutline } from '@styled-icons/evaicons-outline/'
 import LinkWrapper from 'components/LinkWrapper'
+import Link from 'next/link'
 
 import * as S from './styles'
 
@@ -18,10 +19,9 @@ const PageTemplate = ({ heading, body }: PageTemplateProps) => (
 
     <S.Body>
       <div dangerouslySetInnerHTML={{ __html: body }} />
+      <Link href="/terms-of-service">Termos de Serviço</Link>
     </S.Body>
   </S.Content>
 )
 
 export default PageTemplate
-
-CloseOutline
