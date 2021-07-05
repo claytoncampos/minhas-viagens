@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { NextSeo } from 'next-seo'
 
 import { CloseOutline } from '@styled-icons/evaicons-outline'
 import LinkWrapper from 'components/LinkWrapper'
@@ -18,6 +19,7 @@ export type PlacesTemplateProps = {
     name: string
     description?: {
       html: string
+      text: string
     }
     gallery: ImageProps[]
   }
@@ -30,6 +32,28 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 
   return (
     <>
+      <NextSeo
+        title={`${place.name} -Minhas Viagens`}
+        description={
+          place.description?.text ||
+          'Um Simples proheto para mostrar minhas viagens pelo mundo, conteundo informações, fotos e marcação no Mapa.'
+        }
+        canonical="https://netlfy.minhas-viagens.com"
+        openGraph={{
+          url: 'https://netlfy.minhas-viagens.com',
+          title: `${place.name}-Minhas Viagens`,
+          description: place.description?.text,
+          images: [
+            {
+              url: place.gallery[0].url,
+              width: place.gallery[0].width,
+              height: place.gallery[0].height,
+              alt: `${place.name}`
+            }
+          ]
+        }}
+      />
+
       <LinkWrapper href="/">
         <CloseOutline size={32} aria-label="Go back to map" />
       </LinkWrapper>
