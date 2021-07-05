@@ -25,7 +25,7 @@ const CustomTileLayer = () => {
   return MAPBOX_API_KEY ? (
     <TileLayer
       attribution='© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      url={`https://api.mapbox.com/styles/v1/${MAPBOX_USERID}/${MAPBOX_STYLEID}/tiles/512/0/0/0@2x?access_token=${MAPBOX_API_KEY}`}
+      url={`https://api.mapbox.com/styles/v1/${MAPBOX_USERID}/${MAPBOX_STYLEID}/tiles/256/{z}/{x}/{y}{@2x}?access_token=${MAPBOX_API_KEY}`}
     />
   ) : (
     <TileLayer
