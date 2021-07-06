@@ -104,7 +104,6 @@ Para saber mais sobre Next.js, dê uma olhada nos seguintes recursos:
 
 Você pode verificar [o repositório Next.js GitHub](https://github.com/vercel/next.js/) - seus comentários e contribuições são bem-vindos!
 
-This project is under the MIT license. See the [LICENSE](https://github.com/claytoncampos/NLW3.0-Happy/blob/master/LICENSE) for details.
 
 Feito com ♥ por Clayton Campos
 :wave: [Get in touch!](https://www.linkedin.com/in/clayton-almeida-campos-198732176/)
