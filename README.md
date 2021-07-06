@@ -55,12 +55,12 @@ crie um nome de token e marque todas as consultas possíveis. Salve e obtenha o 
 #### variaveis de ambiente
 Crie seu arquivo `.env.local` com suas chaves.
 
-GRAPHQL_HOST
+```GRAPHQL_HOST
 GRAPHQL_TOKEN
 NEXT_PUBLIC_MAPBOX_API_KEY
 NEXT_PUBLIC_MAPBOX_USERID
 NEXT_PUBLIC_MAPBOX_STYLEID
-
+```
 ### NextJS
 
 Depois de criar sua conta no [GraphCMS](https://graphcms.com/) e seguir as etapas acima, você só precisa renomear
