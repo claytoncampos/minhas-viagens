@@ -1,4 +1,4 @@
-
+<div align="center">
  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 
   <a href="https://www.linkedin.com/in/clayton-almeida-campos-198732176/">
@@ -6,6 +6,7 @@
   </a>
 <h1 align="center">
 Minhas viagens</h1>
+  </div>
 
 > Web App para gerenciar suas viagens, mostrar os lugares fixados no mapa onde você já visitou ou deseja ir.
 
