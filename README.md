@@ -40,6 +40,7 @@ Depois de criar o Schema, basta seguir as etapas:
   - `Rich Text` as `description`
   - `Asset Picker` as `gallery`
 
+
 - Schema > Add New Model with `Page` name
 - And add the following fields:
   - `Single Line Text` as `heading`
@@ -104,7 +105,6 @@ Para saber mais sobre Next.js, dê uma olhada nos seguintes recursos:
 - [Aprenda Next.js](https://nextjs.org/learn) - um tutorial interativo Next.js.
 
 Você pode verificar [o repositório Next.js GitHub](https://github.com/vercel/next.js/) - seus comentários e contribuições são bem-vindos!
-
 
 Feito com ♥ por Clayton Campos
 :wave: [Get in touch!](https://www.linkedin.com/in/clayton-almeida-campos-198732176/)
