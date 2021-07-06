@@ -1,13 +1,34 @@
-# Minhas viagens
 
-> Web App para mostrar os lugares fixados que você visitou ou deseja ir.
+ <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+
+  <a href="https://www.linkedin.com/in/clayton-almeida-campos-198732176/">
+    <img alt="Made by ClaytonCampos" src="https://img.shields.io/badge/made%20by-ClaytonCampos-%2304D361">
+  </a>
+<h1 align="center">
+Minhas viagens</h1>
+
+> Web App para gerenciar suas viagens, mostrar os lugares fixados no mapa onde você já visitou ou deseja ir.
+
+Mapa totalmente interativo utilizando a fantástica biblioteca do <b>Leaflet.</b>
+
+Cada ponto no mapa é gerenciado através de um CMS na cloud chamado <b>GraphCMS </b> utilizando o NextJS para criar a melhor experiência para o usuário.
 
 
-## Começando
+#### Libs utilizadas:
+ * TypeScript
+ * React
+ * NextJS
+ * GraphQL
+ * Testing Library
+ * Styled-components
+ * Nextjs-progressbar
 
-### GraphCMS
 
-Este projeto usa [GraphCMS] (https://graphcms.com/), então você precisa criar uma conta lá primeiro.
+### Começando
+
+##### GraphCMS
+
+Este projeto usa [GraphCMS](https://graphcms.com/), então você precisa criar uma conta lá primeiro.
 
 Depois de criar o Schema, basta seguir as etapas:
 - Schema > Add New Model with `Place` name
@@ -31,6 +52,15 @@ Depois disso, preencha alguns valores e não se esqueça de `publicar`!
 Para criar um acesso de token, vá para `Configurações> Acesso API`, dentro desta página, encontre` Tokens de autenticação permanente`,
 crie um nome de token e marque todas as consultas possíveis. Salve e obtenha o token.
 
+#### variaveis de ambiente
+Crie seu arquivo `.env.local` com suas chaves.
+
+GRAPHQL_HOST
+GRAPHQL_TOKEN
+NEXT_PUBLIC_MAPBOX_API_KEY
+NEXT_PUBLIC_MAPBOX_USERID
+NEXT_PUBLIC_MAPBOX_STYLEID
+
 ### NextJS
 
 Depois de criar sua conta no [GraphCMS](https://graphcms.com/) e seguir as etapas acima, você só precisa renomear
@@ -44,7 +74,7 @@ npm run dev
 yarn dev
 ```
 
-Abra [http: // localhost: 3000] (http: // localhost: 3000) com seu navegador para ver o resultado.
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
 
 Você pode começar a editar a página modificando `pages / index.js`. A página é atualizada automaticamente conforme você edita o arquivo.
 
@@ -57,6 +87,14 @@ Você pode começar a editar a página modificando `pages / index.js`. A página
 - `test`: executa jest para testar todos os componentes e páginas
 - `test: watch`: executa jest no modo watch
 
+
+
+## Preview
+
+<img src ='./public/img/cover.png' >
+
+[Veja rodando](https://minhas-viagens-claytoncampos.vercel.app/)
+
 ## Saber mais
 
 Para saber mais sobre Next.js, dê uma olhada nos seguintes recursos:
@@ -65,3 +103,8 @@ Para saber mais sobre Next.js, dê uma olhada nos seguintes recursos:
 - [Aprenda Next.js](https://nextjs.org/learn) - um tutorial interativo Next.js.
 
 Você pode verificar [o repositório Next.js GitHub](https://github.com/vercel/next.js/) - seus comentários e contribuições são bem-vindos!
+
+This project is under the MIT license. See the [LICENSE](https://github.com/claytoncampos/NLW3.0-Happy/blob/master/LICENSE) for details.
+
+Feito com ♥ por Clayton Campos
+:wave: [Get in touch!](https://www.linkedin.com/in/clayton-almeida-campos-198732176/)
